@@ -1,3 +1,6 @@
+# My first python game, Noob-Battleships by pneu1
+#later stages to include ship length, and 2 player
+
 from random import randint    #import the random int gen from random
 
 board = []    #set up our board
@@ -30,7 +33,7 @@ print "Its hidden somewhere on a 5x5 grid, Good luck!"
 # This loop allows us a range of turns, in this case, 4 turns
 for turn in range(4):
   print "Turn", turn + 1    # its turn + 1 as turn starts at 0
-  
+
   # Below 2 lines grab input from user
   guess_row = int(raw_input("Guess Row: "))
   guess_col = int(raw_input("Guess Col: "))
@@ -41,7 +44,7 @@ for turn in range(4):
     board[guess_row-1][guess_col-1] = "!"
     print_board(board)
     break # Breaks out of function if we sink the battle ship
-    
+
   # If we havent won already, here we check a number of posibilities
   # first if loop checks to ensure the guess was even on the board
   # then elif checks that guess has already been made
@@ -57,8 +60,6 @@ for turn in range(4):
       board[guess_row-1][guess_col-1] = "X"
       if turn == 3:
         print "Game Over"
-            
+
     turn = turn + 1          # increments turn by 1 each loop
     print_board(board)       # Calls the function
-    
-    
