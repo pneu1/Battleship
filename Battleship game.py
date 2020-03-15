@@ -1,5 +1,8 @@
 # My first python game, Noob-Battleships by pneu1
-#later stages to include ship length, and 2 player
+# later stages to include ship length, and 2 player
+# ver1.0 - basic
+# ver1.1 - Add 2x2 battleship
+
 
 from random import randint    #import the random int gen from random
 
