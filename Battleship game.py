@@ -2,6 +2,7 @@
 # later stages to include ship length, and 2 player
 # ver1.0 - basic
 # ver1.1 - Add 2x2 battleship
+# ver1.2 - Add 2 player
 
 
 from random import randint    #import the random int gen from random
